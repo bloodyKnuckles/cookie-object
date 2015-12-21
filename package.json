@@ -1,0 +1,26 @@
+{
+  "name": "cookie-object",
+  "version": "0.1.0",
+  "description": "Transmit Javascript objects using cookies.",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bloodyKnuckles/cookie-object.git"
+  },
+  "keywords": [
+    "cookie",
+    "object"
+  ],
+  "author": "Jay Scott ANDERSON",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bloodyKnuckles/cookie-object/issues"
+  },
+  "homepage": "https://github.com/bloodyKnuckles/cookie-object#readme",
+  "devDependencies": {
+    "tape": "^4.2.2"
+  }
+}
