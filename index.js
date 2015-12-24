@@ -4,7 +4,11 @@ exports.getCookieObject = function (cookie, name) {
   cookie.split(/;\s*/).forEach(function (item) {
     var cookiepair = item.split(/=(.+)?/)
     if ( 'string' === typeof name ) {
-      if ( name === cookiepair[0] ) { ret = JSON.parse(cookiepair[1]) }
+      if ( name === cookiepair[0] ) {
+        ret = cookiepair[1].charAt(0).match(/[{"']/)
+          ? JSON.parse(cookiepair[1])
+          : cookiepair[1]
+      }
     }
     else if (
       (undefined === name && 2 <= cookiepair.length)
