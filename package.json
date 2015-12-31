@@ -1,6 +1,6 @@
 {
   "name": "cookie-object",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Transmit Javascript objects using cookies.",
   "main": "index.js",
   "scripts": {
