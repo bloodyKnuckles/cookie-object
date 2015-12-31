@@ -19,6 +19,6 @@ exports.getCookieObject = function (cookie, name) {
         : cookiepair[1]
     }
   })
-  return 0 < Object.keys(ret).length? ret: undefined
+  return ret && (0 < Object.keys(ret).length? ret: undefined)
 }
 
